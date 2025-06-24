@@ -1,10 +1,10 @@
 .top-right-buttons {
-  position: fixed; /* <-- fixed to viewport */
+  position: absolute;
   top: 15px;
   right: 15px;
   display: flex;
   gap: 10px;
-  z-index: 1000; /* stays above everything */
+  z-index: 1000;
 }
 
 .top-right-buttons button {
@@ -14,10 +14,12 @@
   padding: 5px 10px;
   font-size: 18px;
   cursor: pointer;
+  color: white;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   transition: background 0.2s;
 }
 
 .top-right-buttons button:hover {
   background-color: #f0f0f0;
+  color: black;
 }

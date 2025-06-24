@@ -140,12 +140,13 @@ export default function App() {
   //HTML for the displayed game and highscore grid
   return (
     <div className="App">
-      <div className="app-content">
-        <TopRightButtons
-          onInfoClick={showInfo}
-          onFullscreenClick={toggleFullScreen}
-        />
+      {/* ✅ Moved outside of .app-content */}
+      <TopRightButtons
+        onInfoClick={showInfo}
+        onFullscreenClick={toggleFullScreen}
+      />
 
+      <div className="app-content">
         <div className="game-wrapper">
           <h1>Whack a Mole 🔨</h1>
 

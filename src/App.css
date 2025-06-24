@@ -5,8 +5,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden; /* Prevent scrolling for full-screen layout */
+  min-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   font-family: sans-serif;
   background-color: #000;
   background-size: cover;
@@ -15,8 +17,11 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
-/* Ensure all elements inherit box-sizing for easier layout handling */
+/* Ensures all elements inherit box-sizing for easier layout handling */
 * {
   box-sizing: inherit;
 }
@@ -48,14 +53,14 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 3rem 1rem 1.5rem;
   justify-content: center;
 }
 
 /* Wrapper for main game content */
 .game-wrapper {
   width: 100%;
-  max-width: 1200px; /* Keeps layout responsive */
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
