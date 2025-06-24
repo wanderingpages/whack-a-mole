@@ -1,0 +1,94 @@
+.highscores-box {
+  background-color: rgba(97, 29, 29, 0.975);
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 260px;
+  min-width: 240px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar */
+
+.highscores-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Title Styling */
+
+.highscores-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.25rem;
+}
+
+.score-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.score-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.score-list li:last-child {
+  border-bottom: none;
+}
+
+.score-list li.empty {
+  text-align: center;
+  font-style: italic;
+  color: #ddd;
+}
+
+/* === Reset Button Styling === */
+
+.reset-button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffcc70;
+  color: #4d1a1a;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #f7b733;
+}
+
+/* Responsive adjustments for small screen */
+@media (max-width: 800px) {
+  .highscores-box {
+    width: 90%;
+    max-width: 400px;
+    min-width: auto;
+    padding: 20px;
+  }
+}

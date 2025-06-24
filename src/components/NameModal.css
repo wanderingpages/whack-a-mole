@@ -1,0 +1,80 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* === Modal Box === */
+
+.modal {
+  background-color: rgba(97, 29, 29, 0.975); /* match game */
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  max-width: 90vw;
+  color: white;
+}
+
+/* === Modal Header Text === */
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #f3f3f3;
+  text-align: center;
+}
+
+/* === Input Field Styling === */
+
+.modal input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #333;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.modal input::placeholder {
+  text-align: center;
+  color: #010101;
+}
+
+/* === Submit Button Styling === */
+
+.modal button {
+  background-color: #ffcc70;
+  color: #4d1a1a;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  max-width: 200px;
+}
+.modal button:hover {
+  background-color: #f7b733;
+}

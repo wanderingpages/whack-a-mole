@@ -1,0 +1,36 @@
+.game {
+  background-color: rgba(97, 29, 29, 0.975);
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
+  max-height: none;
+  overflow: visible;
+}
+
+/* === Grid for Holes === */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+
+/* Responsive grid adjustment */
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+
+  .game {
+    width: 90%;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+.hole {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px #000;
+  overflow: hidden;
+}
+
+/* === Character Styling === */
+
+.character {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* === Hammer Image Styling === */
+
+.hammer {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: rotate(-45deg);
+  animation: smash 0.3s ease;
+}
+
+/* === Smash Animation for Hammer === */
+
+@keyframes smash {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
